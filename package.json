@@ -1,0 +1,33 @@
+{
+  "name": "react-use-heroku",
+  "version": "1.0.0",
+  "description": "Awake a sleepy Heroku, then load the rest of your react application",
+  "author": "Gainor Bostwick <gainorbostwick@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gainorb/react-use-heroku.git"
+  },
+  "homepage": "https://github.com/gainorb/react-use-heroku",
+  "bugs": {
+    "url": "https://github.com/gainorb/react-use-heroku/issues"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "eslint src"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "heroku",
+    "loading"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0"
+  }
+}

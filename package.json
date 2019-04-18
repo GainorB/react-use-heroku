@@ -11,10 +11,7 @@
   "bugs": {
     "url": "https://github.com/gainorb/react-use-heroku/issues"
   },
-  "main": "src/index.js",
-  "scripts": {
-    "lint": "eslint src"
-  },
+  "main": "index.js",
   "keywords": [
     "react",
     "hooks",

@@ -29,17 +29,17 @@ A **boolean** indicating whether heroku is up and running.
 
 ```javascript
 import React from 'react';
-import useHeroku as isHerokuLoading from 'react-use-heroku';
+import * as isHerokuSleeping from 'react-use-heroku';
 
 const url = 'https://.........herokuapp.com/wake-up';
 
 const App = () => {
-  if (isHerokuLoading({ url })) return <>Heroku is sleeping, hang tight..</>;
+  if (isHerokuSleeping({ url })) return <div>Heroku is sleeping, hang tight..</div>;
 
   return (
-    <>
+    <div>
         Welcome to My React App
-    </>
+    </div>
   );
 };
 

@@ -27,7 +27,7 @@ You pass `useHeroku` an object with the following properties.
 
 A **boolean** indicating whether heroku is up and running.
 
-```
+```javascript
 import React from 'react';
 import useHeroku as isHerokuLoading from 'react-use-heroku';
 
@@ -50,7 +50,7 @@ export default App;
 
 An extremely simple Express Server
 
-```
+```javascript
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');

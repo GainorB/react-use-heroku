@@ -1,6 +1,6 @@
 {
   "name": "react-use-heroku",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Awake a sleepy Heroku, then load the rest of your react application",
   "author": "Gainor Bostwick <gainorbostwick@gmail.com>",
   "license": "MIT",

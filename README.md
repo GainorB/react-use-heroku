@@ -10,6 +10,10 @@
 $ npm i react-use-heroku
 ```
 
+```
+$ yarn add react-use-heroku
+```
+
 # Requirement
 This package only works in versions of React that support Hooks.
 

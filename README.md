@@ -4,7 +4,7 @@
 
 > Have you deployed any of your projects on Heroku's Free Plan? You definitely noticed your app sleeps after **30** minutes of inactivity. `react-use-heroku` is custom hook that fetchs an endpoint on your server to **wake up** heroku. At this point, render a loading message, once successful, load your app. 
 
-🚨Note: This package **doesn't** ping heroku every 30 minutes to wake it up. All this hook accomplishes, is preventing your application from rendering a blank screen, instead it will show loading text until the server is available.
+🚨Note: This package **doesn't** ping heroku every 30 minutes to wake it up. All this hook accomplishes, is preventing your application from rendering a blank screen initially, instead it will render loading text (or whatever else you wish) until the server is available.
 
 # Install
 
@@ -19,7 +19,7 @@ $ yarn add react-use-heroku
 # Requirement
 This package only works in versions of React that support Hooks.
 
-# Usage: Client
+# Usage: Example Client
 
 ## Parameters
 
@@ -31,7 +31,7 @@ You pass `useHeroku` an object with the following properties.
 
 ## Returned
 
-A **boolean** indicating whether heroku is up and running.
+A **boolean**, **true** by default, will be set to **false** once the server is ready.
 
 ```javascript
 import React from 'react';
@@ -54,7 +54,7 @@ const App = () => {
 export default App;
 ```
 
-# Usage: Api
+# Usage: Example Api
 
 An extremely simple Express Server
 

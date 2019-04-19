@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 
-export default function useHeroku({ url }) {
+const useHeroku = ({ url }) => {
     const [isHerokuLoading, setHerokuLoading] = useState(true);
 
     const wakeUpHeroku = async () => {
@@ -13,9 +13,11 @@ export default function useHeroku({ url }) {
         wakeUpHeroku();
     }, []);
 
-    return isHerokuLoading;
+    return [isHerokuLoading, setHerokuLoading];
 }
 
 useHeroku.propTypes = {
     url: PropTypes.string.isRequired
 }
+
+export default useHeroku;

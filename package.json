@@ -3,6 +3,7 @@
   "version": "1.0.1",
   "description": "Awake a sleepy Heroku, then load the rest of your react application",
   "author": "Gainor Bostwick <gainorbostwick@gmail.com>",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/gainorb/react-use-heroku.git"
@@ -11,20 +12,33 @@
   "bugs": {
     "url": "https://github.com/gainorb/react-use-heroku/issues"
   },
-  "main": "index.js",
+  "main": "build/index.js",
   "keywords": [
     "react",
     "hooks",
     "heroku",
     "loading"
   ],
-  "license": "MIT",
+  "scripts": {
+    "prepublishOnly": "babel ./src --out-dir ./build -s inline"
+  },
   "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
     "prop-types": "^15.7.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
   },
   "peerDependencies": {
-    "react": "^16.8.0"
-  }
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "dependencies": {
+    "webpack": "^4.30.0"
+  },
+  "files": [
+    "build/*"
+  ]
 }

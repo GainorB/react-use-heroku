@@ -13,7 +13,7 @@ const useHeroku = ({ url }) => {
         wakeUpHeroku();
     }, []);
 
-    return [isHerokuLoading, setHerokuLoading];
+    return isHerokuLoading;
 }
 
 useHeroku.propTypes = {

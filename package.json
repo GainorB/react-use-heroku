@@ -35,9 +35,6 @@
     "react": "^16.8.0",
     "react-dom": "^16.8.0"
   },
-  "dependencies": {
-    "webpack": "^4.30.0"
-  },
   "files": [
     "build/*"
   ]
